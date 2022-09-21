@@ -9,5 +9,11 @@ namespace G1TintaEspacial.BD.Data.Entidades
 {
     public class MedioPago : Usuario
     {
+       
+
+
+
+
+        //HOLAAAAAAAAAAAAAAAAAAAAAAAA
     }
 }
