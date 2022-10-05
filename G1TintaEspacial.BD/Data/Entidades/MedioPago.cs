@@ -9,11 +9,13 @@ namespace G1TintaEspacial.BD.Data.Entidades
 {
     public class MedioPago : Usuario
     {
-       
+        public int Id { get; set; }
+        public string Alias { get; set; }
 
 
 
-
-        //HOLAAAAAAAAAAAAAAAAAAAAAAAA
     }
+
 }
+    
+
