@@ -12,6 +12,8 @@ namespace G1TintaEspacial.BD.Data.Entidades
         public int Id { get; set; }
         public string Alias { get; set; }
 
+        //public int MedioPagoId { get; set; }
+        public List<Usuario> Usuarios { get; set; }
 
 
     }

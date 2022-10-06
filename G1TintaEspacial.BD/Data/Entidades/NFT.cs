@@ -7,7 +7,7 @@ using TINTAESPACIAL.DataBase.data.Entidades;
 
 namespace G1TintaEspacial.BD.Data.Entidades
 {
-    public class NFT : Usuario
+    public class NFT : Usuario 
     {
         public int Id { get; set; }
         public int Token { get; set; }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using G1TintaEspacial.BD.Data.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -15,22 +16,10 @@ namespace TINTAESPACIAL.DataBase.data.Entidades
         [Required]
         public int Id { get; set; }// idusuario
 
-        [Required(ErrorMessage = "El Nombre es obligatorio.")]
-        [MaxLength(255, ErrorMessage = "El campo tiene como máximo {1} caracteres.")]
-        public string Nombre { get; set; }
-
-        [Required(ErrorMessage = "El apellido es obligatorio.")]
-        [MaxLength(255, ErrorMessage = "El campo tiene como máximo {1} caracteres.")]
-        public string Apellido { get; set; }
-
-        [Required(ErrorMessage = "El Dni es obligatorio.")]
-        [MaxLength(20, ErrorMessage = "El campo tiene como máximo {1} caracteres.")]
-        public int Dni { get; set; }
-
         [Required(ErrorMessage = "El Nombre de Usuario es obligatorio.")]
         [MaxLength(255, ErrorMessage = "El campo tiene como máximo {1} caracteres.")]
 
-        public string IdNombreUsuario { get; set; }
+        public string NombreUsuario { get; set; }
 
         [Required(ErrorMessage = "El Email es obligatorio.")]
         [MaxLength(255, ErrorMessage = "El campo tiene como máximo {1} caracteres.")]
@@ -41,38 +30,19 @@ namespace TINTAESPACIAL.DataBase.data.Entidades
 
         public string Contraseña { get; set; }
 
-
-        [Required(ErrorMessage = "La descripcion es obligatorio.")]
-        [MaxLength(150, ErrorMessage = "El campo tiene como máximo {1} caracteres.")]
-        public string Descripcion { get; set; }
-
         [Required(ErrorMessage = "La Imagen de perfil es obligatorio.")]
         [MaxLength(255, ErrorMessage = "El campo tiene como máximo {1} caracteres.")]
-        public string ImagePerfil { get; set; }//obligatoria o no? en el caso de no ser obligatoria poner una por defecto
-
-        [Required(ErrorMessage = "La galeria es obligatorio.")]
-        [MaxLength(255, ErrorMessage = "El campo tiene como máximo {1} caracteres.")]
-
-        public string Galeria { get; set; }
-
+        public string? ImagePerfil { get; set; }
         #endregion
 
         #region Tatuador
-
-        [Required(ErrorMessage = "Los estilos son obligatorio.")]
-        [MaxLength(255, ErrorMessage = "El campo tiene como máximo {1} caracteres.")]
-
-        public string Estiloss { get; set; }
-
-        [Required(ErrorMessage = "La imagen de carnet sanitario obligatorio.")]
-        [MaxLength(255, ErrorMessage = "El campo tiene como máximo {1} caracteres.")]
-
-        public string ImageCarnetSanitarioo { get; set; }// ESTUDIO Y TATUAADOR TIENEN CARNET SANITARIO
+        public string MercadoPago { get; set; }
 
         [Required(ErrorMessage = "El phone es obligatorio.")]
         [MaxLength(20, ErrorMessage = "El campo tiene como máximo {1} caracteres.")]
-
-        public int Phonee { get; set; }
+        public int Telefono { get; set; }
+        public int MedioPagoId { get; set; }//id+propiedad siempre unidos y en ese orden id arriba y propiedad abajo
+        public MedioPago MedioPago { get; set; }//propiedad de tipo medio de pag. relacion 1=1
         #endregion
         // nueva tabla con contacto? estudio-artista-tatuador
         // como hacer con lo que tienen en comun estos tres?

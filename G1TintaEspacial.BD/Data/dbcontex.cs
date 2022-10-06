@@ -12,8 +12,17 @@ namespace TINTAESPACIAL.DataBase
 { 
     public class dbcontex: DbContext
     {
-        
-        public DbSet<Estilos> Estilos { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+            foreach ( /// Desactiva la eliminacion en cascada de todas las relaciones
+                var relationship in modelBuilder.Model.GetEntityTypes()
+                .SelectMany(e => e.GetForeignKeys()))
+            {
+                relationship.DeleteBehavior = DeleteBehavior.Restrict;
+            }
+        }
+
         public DbSet<Usuario> Usuarios { get; set; }
         
         public DbSet<MedioPago> MedioPagos { get; set; }
