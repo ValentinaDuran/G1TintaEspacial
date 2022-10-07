@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using TINTAESPACIAL.DataBase;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,11 @@ builder.Services.AddRazorPages();
 var conn = builder.Configuration.GetConnectionString("conn");
 
 builder.Services.AddDbContext<dbcontex>(opciones => opciones.UseSqlServer(conn));
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "PRUEBA", Version = "v1" });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
