@@ -38,7 +38,7 @@ namespace G1TintaEspacial.BD.Migrations
                     b.HasIndex(new[] { "Alias" }, "MedioPagoAlias_UQ")
                         .IsUnique();
 
-                    b.ToTable("MedioPagos");
+                    b.ToTable("MedioPagos", (string)null);
                 });
 
             modelBuilder.Entity("TINTAESPACIAL.DataBase.data.Entidades.Usuario", b =>
@@ -86,7 +86,7 @@ namespace G1TintaEspacial.BD.Migrations
 
                     b.HasIndex("MedioPagoId");
 
-                    b.ToTable("Usuarios");
+                    b.ToTable("Usuarios", (string)null);
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("Usuario");
                 });

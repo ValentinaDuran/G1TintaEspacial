@@ -54,12 +54,12 @@
 
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <MatButton Raised="true" OnClick="@RunOnClick" Label="@Item.Autor"></MatButton>
-                                        @*<h5 class="card-text">Juancitoperez132</h5>*@
+                                        <MatButton Raised="true" Label="@Item.Autor"></MatButton>
+                                        
                                     </div>
                                     <MatButton Icon="credit_card" Raised="true" OnClick="@RunOnClick" Label="comprar"></MatButton>
                                 </div>
-                                <small class="text-muted">@Item.Token</small>
+                                <small class="text-muted">tk: @Item.Token</small>
                             </div>
                         </div>
                     </div>
@@ -73,10 +73,6 @@
 
 @code
 {
-    //[Parameter] public NFTs nFTs { get; set; }
-
-    //List<G1TintaEspacial.BD.Data.Entidades>
-
     List<NFT> nFTs;
 
     public void RunOnClick(MouseEventArgs e)
