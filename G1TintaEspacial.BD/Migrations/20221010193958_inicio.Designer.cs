@@ -11,7 +11,7 @@ using TINTAESPACIAL.DataBase;
 namespace G1TintaEspacial.BD.Migrations
 {
     [DbContext(typeof(dbcontex))]
-    [Migration("20221006233324_inicio")]
+    [Migration("20221010193958_inicio")]
     partial class inicio
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -22,6 +22,66 @@ namespace G1TintaEspacial.BD.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("G1TintaEspacial.BD.Data.Entidades.MedioPago", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Alias")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex(new[] { "Alias" }, "MedioPagoAlias_UQ")
+                        .IsUnique();
+
+                    b.ToTable("MedioPagos");
+                });
+
+            modelBuilder.Entity("G1TintaEspacial.BD.Data.Entidades.NFT", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Autor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagenNFT")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NombreObra")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Precio")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Token")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("NFTs");
+                });
 
             modelBuilder.Entity("TINTAESPACIAL.DataBase.data.Entidades.Usuario", b =>
                 {
@@ -36,19 +96,13 @@ namespace G1TintaEspacial.BD.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("ImagePerfil")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("MedioPagoId")
                         .HasColumnType("int");
@@ -71,49 +125,15 @@ namespace G1TintaEspacial.BD.Migrations
                     b.HasIndex("MedioPagoId");
 
                     b.ToTable("Usuarios");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Usuario");
-                });
-
-            modelBuilder.Entity("G1TintaEspacial.BD.Data.Entidades.MedioPago", b =>
-                {
-                    b.HasBaseType("TINTAESPACIAL.DataBase.data.Entidades.Usuario");
-
-                    b.Property<string>("Alias")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasDiscriminator().HasValue("MedioPago");
                 });
 
             modelBuilder.Entity("G1TintaEspacial.BD.Data.Entidades.NFT", b =>
                 {
-                    b.HasBaseType("TINTAESPACIAL.DataBase.data.Entidades.Usuario");
-
-                    b.Property<string>("Autor")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Descripcion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImagenNFT")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NombreObra")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Precio")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Token")
-                        .HasColumnType("int");
-
-                    b.HasDiscriminator().HasValue("NFT");
+                    b.HasOne("TINTAESPACIAL.DataBase.data.Entidades.Usuario", null)
+                        .WithMany("NFTs")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("TINTAESPACIAL.DataBase.data.Entidades.Usuario", b =>
@@ -130,6 +150,11 @@ namespace G1TintaEspacial.BD.Migrations
             modelBuilder.Entity("G1TintaEspacial.BD.Data.Entidades.MedioPago", b =>
                 {
                     b.Navigation("Usuarios");
+                });
+
+            modelBuilder.Entity("TINTAESPACIAL.DataBase.data.Entidades.Usuario", b =>
+                {
+                    b.Navigation("NFTs");
                 });
 #pragma warning restore 612, 618
         }

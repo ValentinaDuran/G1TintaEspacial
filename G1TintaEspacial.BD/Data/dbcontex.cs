@@ -12,7 +12,7 @@ namespace TINTAESPACIAL.DataBase
 { 
     public class dbcontex: DbContext
     {
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
             foreach ( /// Desactiva la eliminacion en cascada de todas las relaciones
@@ -21,7 +21,7 @@ namespace TINTAESPACIAL.DataBase
             {
                 relationship.DeleteBehavior = DeleteBehavior.Restrict;
             }
-        }
+        }*/
 
         public DbSet<Usuario> Usuarios { get; set; }
         

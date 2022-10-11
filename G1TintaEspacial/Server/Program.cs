@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -9,15 +10,19 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-var conn = builder.Configuration.GetConnectionString("conn");
+var conn = builder.Configuration.GetConnectionString("conn");//conexion base de datos
 
 builder.Services.AddDbContext<dbcontex>(opciones => opciones.UseSqlServer(conn));
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "PRUEBA", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "PRUEBA", Version = "v1" });//swagger
 });
 
 var app = builder.Build();
+
+app.UseSwagger();//swager
+app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json,",
+    "Location v1"));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
