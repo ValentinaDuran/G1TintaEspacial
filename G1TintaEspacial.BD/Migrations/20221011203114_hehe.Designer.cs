@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TINTAESPACIAL.DataBase;
 
@@ -10,9 +11,10 @@ using TINTAESPACIAL.DataBase;
 namespace G1TintaEspacial.BD.Migrations
 {
     [DbContext(typeof(dbcontex))]
-    partial class dbcontexModelSnapshot : ModelSnapshot
+    [Migration("20221011203114_hehe")]
+    partial class hehe
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,7 +40,7 @@ namespace G1TintaEspacial.BD.Migrations
                     b.HasIndex(new[] { "Alias" }, "MedioPagoAlias_UQ")
                         .IsUnique();
 
-                    b.ToTable("MedioPagos", (string)null);
+                    b.ToTable("MedioPagos");
                 });
 
             modelBuilder.Entity("TINTAESPACIAL.DataBase.data.Entidades.Usuario", b =>
@@ -86,7 +88,7 @@ namespace G1TintaEspacial.BD.Migrations
 
                     b.HasIndex("MedioPagoId");
 
-                    b.ToTable("Usuarios", (string)null);
+                    b.ToTable("Usuarios");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("Usuario");
                 });
