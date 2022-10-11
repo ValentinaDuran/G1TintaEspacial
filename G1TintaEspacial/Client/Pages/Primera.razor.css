@@ -1,0 +1,81 @@
+﻿
+.e104_2
+
+{
+    width: 1440px;
+    height: 1133px;
+    position: absolute;
+    background-image: url(images/inicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e97_17 {
+    background-image: linear-gradient(0deg, rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1) 0%,rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 0) 100%);
+    width: 192px;
+    height: 32px;
+    position: absolute;
+    left: 485px;
+    top: 849px;
+    border-radius: 5px
+}
+
+.e97_18 {
+    background-image: linear-gradient(0deg, rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1) 0%,rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 0) 100%);
+    width: 192px;
+    height: 32px;
+    position: absolute;
+    left: 697px;
+    top: 849px;
+    border-radius: 5px;
+}
+
+.e97_19 {
+    color: rgba(0, 0, 0, 1);
+    width: 164px;
+    height: 26px;
+    position: absolute;
+    left: 531px;
+    top: 852px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.e97_20 {
+    color: rgba(0, 0, 0, 1);
+    width: 121px;
+    height: 26px;
+    position: absolute;
+    left: 745px;
+    top: 852px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.e129_314 {
+    width: 1068px;
+    height: 733px;
+    position: absolute;
+    left: 186px;
+    top: 200px;
+    background-image: url(images/tintalogo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e129_315 {
+    width: 867px;
+    height: 620px;
+    position: absolute;
+    left: 869px;
+    top: -93px;
+    background-image: url(images/rectangle_79.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+

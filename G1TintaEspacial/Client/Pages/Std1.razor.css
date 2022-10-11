@@ -1,0 +1,537 @@
+﻿body {
+}
+.205_228 {
+    overflow: hidden;
+}
+
+.e205_228 {
+    width: 1440px;
+    height: 1378px;
+    position: absolute;
+    /*background-image: url(images/base.png);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_229 {
+    color: rgba(255, 250.75000405311584, 250.75000405311584, 1);
+    width: 551px;
+    height: 100px;
+    position: absolute;
+    left: -12294px;
+    top: 2832px;
+    font-family: Asus Rog;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.e205_230 {
+    color: rgba(255, 250.75000405311584, 250.75000405311584, 1);
+    width: 551px;
+    height: 100px;
+    position: absolute;
+    left: -12294px;
+    top: 2909px;
+    font-family: Asus Rog;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.e205_231 {
+    background-color: rgba(255, 230.5625081062317, 230.5625081062317, 1);
+    width: 100px;
+    height: 150.47169494628906px;
+    position: absolute;
+    left: -12355px;
+    top: 3510.412353515625px;
+}
+
+.e205_232 {
+    width: 404px;
+    height: 340px;
+    position: absolute;
+    left: -12184px;
+    top: 2862px;
+    border-top-left-radius: 56px;
+    border-top-right-radius: 56px;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+    background-image: url(images/rectangle_75.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_233 {
+    color: rgba(255, 255, 255, 1);
+    width: 239px;
+    height: 21px;
+    position: absolute;
+    left: -12685px;
+    top: 3265px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_234 {
+    color: rgba(255, 255, 255, 1);
+    width: 299px;
+    height: 22px;
+    position: absolute;
+    left: -12685px;
+    top: 3307px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_235 {
+    color: rgba(255, 255, 255, 1);
+    width: 391px;
+    height: 32px;
+    position: absolute;
+    left: -12685px;
+    top: 3342px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_236 {
+    color: rgba(255, 255, 255, 1);
+    width: 310px;
+    height: 21px;
+    position: absolute;
+    left: -12685px;
+    top: 3385px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_237 {
+    color: rgba(255, 255, 255, 1);
+    width: 310px;
+    height: 21px;
+    position: absolute;
+    left: -12685px;
+    top: 3425px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_238 {
+    color: rgba(255, 255, 255, 1);
+    width: 1060px;
+    height: 21px;
+    position: absolute;
+    left: -12685px;
+    top: 3523px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_239 {
+    color: rgba(255, 255, 255, 1);
+    width: 1300px;
+    height: 53px;
+    position: absolute;
+    left: -12685px;
+    top: 3463px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_240 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 220px;
+    height: 56px;
+    position: absolute;
+    left: -12642px;
+    top: 2845px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.e205_241 {
+    color: rgba(0, 0, 0, 1);
+    width: 310px;
+    height: 21px;
+    position: absolute;
+    left: -12696px;
+    top: 2862px;
+    font-family: Asus Rog;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_242 {
+    width: 538px;
+    height: 367px;
+    position: absolute;
+    left: 451px;
+    top: 0px;
+    background-image: url(images/rectangle_80.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_492 {
+    color: rgba(255, 255, 255, 1);
+    width: 224px;
+    height: 150px;
+    position: absolute;
+    left: 154px;
+    top: 691px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_519 {
+    color: rgba(255, 255, 255, 1);
+    width: 109px;
+    height: 30px;
+    position: absolute;
+    left: 154px;
+    top: 1053px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_520 {
+    color: rgba(255, 255, 255, 1);
+    width: 133px;
+    height: 15px;
+    position: absolute;
+    left: 154px;
+    top: 1203px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_493 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 1176px;
+    height: 212px;
+    position: absolute;
+    left: 154px;
+    top: 265px;
+}
+
+.e205_491 {
+    width: 144px;
+    height: 114px;
+    position: absolute;
+    left: 154px;
+    top: 420px;
+    background-image: url(images/rectangle_101.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_494 {
+    color: rgba(255, 255, 255, 1);
+    width: 1011px;
+    height: 31px;
+    position: absolute;
+    left: 320px;
+    top: 491px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.e205_495 {
+    color: rgba(255, 255, 255, 1);
+    width: 481px;
+    height: 126px;
+    position: absolute;
+    left: 154px;
+    top: 587px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_503 {
+    color: rgba(255, 255, 255, 1);
+    width: 1181px;
+    height: 126px;
+    position: absolute;
+    left: 154px;
+    top: 877px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_504 {
+    color: rgba(255, 255, 255, 1);
+    width: 310px;
+    height: 60px;
+    position: absolute;
+    left: 824px;
+    top: 590px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_506 {
+    width: 188px;
+    height: 101px;
+    position: absolute;
+    left: 781px;
+    top: 1084px;
+    background-image: url(images/rectangle_95.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_507 {
+    width: 185px;
+    height: 101px;
+    position: absolute;
+    left: 998px;
+    top: 1084px;
+    background-image: url(images/rectangle_96.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_508 {
+    width: 186px;
+    height: 101px;
+    position: absolute;
+    left: 1212px;
+    top: 1084px;
+    background-image: url(images/rectangle_97.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_509 {
+    width: 188px;
+    height: 100px;
+    position: absolute;
+    left: 154px;
+    top: 1085px;
+    background-image: url(images/rectangle_98.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.205_512 {
+    border: 5px solid rgba(255, 0, 0, 1);
+}
+
+.e205_512 {
+    width: 185px;
+    height: 100px;
+    position: absolute;
+    left: 154px;
+    top: 1256px;
+    background-image: url(images/rectangle_103.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_511 {
+    width: 186px;
+    height: 100px;
+    position: absolute;
+    left: 566px;
+    top: 1085px;
+    background-image: url(images/rectangle_100.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.205_513 {
+    border: 5px solid rgba(255, 0, 0, 1);
+}
+
+.e205_513 {
+    width: 212px;
+    height: 101px;
+    position: absolute;
+    left: 392px;
+    top: 1256px;
+    background-image: url(images/rectangle_95.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_514 {
+    width: 211px;
+    height: 96px;
+    position: absolute;
+    left: 657px;
+    top: 1258px;
+    background-image: url(images/rectangle_89.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.205_515 {
+    border: 5px solid rgba(251.81250303983688, 23.082803785800934, 23.082803785800934, 1);
+}
+
+.e205_515 {
+    width: 212px;
+    height: 104px;
+    position: absolute;
+    left: 921px;
+    top: 1254px;
+    background-image: url(images/rectangle_95.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_516 {
+    width: 166px;
+    height: 101px;
+    position: absolute;
+    left: 371px;
+    top: 1084px;
+    background-image: url(images/rectangle_89.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_525 {
+    width: 42px;
+    height: 45px;
+    position: absolute;
+    left: 989px;
+    top: 735px;
+}
+
+.e205_526 {
+    background-color: rgba(255, 0, 0, 1);
+    width: 36.750057220458984px;
+    height: 39.375091552734375px;
+    position: absolute;
+    left: 2.625px;
+    top: 2.812408924102783px;
+}
+
+.e205_527 {
+    width: 42px;
+    height: 45px;
+    position: absolute;
+    left: 1034px;
+    top: 735px;
+}
+
+.e205_528 {
+    background-color: rgba(255, 0, 0, 1);
+    width: 36.75px;
+    height: 39.375px;
+    position: absolute;
+    left: 2.625px;
+    top: 2.8125px;
+}
+
+.e205_529 {
+    background-color: rgba(255, 0, 0, 1);
+    width: 21.43722152709961px;
+    height: 22.968469619750977px;
+    position: absolute;
+    left: 11.812496185302734px;
+    top: 9.37529182434082px;
+}
+
+.e205_530 {
+    width: 42px;
+    height: 45px;
+    position: absolute;
+    left: 1079px;
+    top: 735px;
+}
+
+.e205_531 {
+    background-color: rgba(253.93750101327896, 0, 0, 1);
+    width: 36.75px;
+    height: 39.13856506347656px;
+    position: absolute;
+    left: 2.625px;
+    top: 2.931152105331421px;
+}
+
+.e205_532 {
+    width: 42px;
+    height: 45px;
+    position: absolute;
+    left: 1125px;
+    top: 735px;
+}
+
+.e205_533 {
+    background-color: rgba(255, 0, 0, 1);
+    width: 42px;
+    height: 39.375px;
+    position: absolute;
+    left: 0px;
+    top: 2.8125px;
+}
+
+.e206_172 {
+    color: rgba(255, 255, 255, 1);
+    width: 82px;
+    height: 26px;
+    position: absolute;
+    left: 1358px;
+    top: 102px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e206_173 {
+    color: rgba(255, 255, 255, 1);
+    width: 186px;
+    height: 26px;
+    position: absolute;
+    left: 34px;
+    top: 40px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e206_174 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 60px;
+    height: 58px;
+    position: absolute;
+    left: 1358px;
+    top: 31px;
+}

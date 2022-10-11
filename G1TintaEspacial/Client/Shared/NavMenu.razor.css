@@ -12,7 +12,8 @@
 }
 
 .oi {
-    width: 2rem;
+    width: 1rem;
+   
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
@@ -50,13 +51,15 @@
     color: white;
 }
 
-@media (min-width: 641px) {
+@media (min-width: 241px) {
     .navbar-toggler {
         display: none;
     }
-
+    /* 
     .collapse {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
-    }
+        /* Never collapse the sidebar for wide screens 
+        display:flex;
+    } 
+    */
+
 }

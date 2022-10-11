@@ -1,0 +1,399 @@
+﻿body {
+}
+.205_213 {
+    overflow: hidden;
+}
+
+.e205_213 {
+    width: 1440px;
+    height: 800px;
+    position: absolute;
+   /* background-image: url(images/base.png);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_214 {
+    color: rgba(255, 250.75000405311584, 250.75000405311584, 1);
+    width: 551px;
+    height: 100px;
+    position: absolute;
+    left: -12294px;
+    top: 2655px;
+    font-family: Asus Rog;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.e205_215 {
+    color: rgba(255, 250.75000405311584, 250.75000405311584, 1);
+    width: 551px;
+    height: 100px;
+    position: absolute;
+    left: -12294px;
+    top: 2732px;
+    font-family: Asus Rog;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+.e205_216 {
+    background-color: rgba(255, 230.5625081062317, 230.5625081062317, 1);
+    width: 100px;
+    height: 111px;
+    position: absolute;
+    left: -12355px;
+    top: 2608.6083984375px;
+}
+
+.e205_217 {
+    width: 404px;
+    height: 340px;
+    position: absolute;
+    left: -12184px;
+    top: 2862px;
+    border-top-left-radius: 56px;
+    border-top-right-radius: 56px;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+    background-image: url(images/rectangle_75.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_218 {
+    color: rgba(255, 255, 255, 1);
+    width: 239px;
+    height: 21px;
+    position: absolute;
+    left: -12685px;
+    top: 3265px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_219 {
+    color: rgba(255, 255, 255, 1);
+    width: 299px;
+    height: 22px;
+    position: absolute;
+    left: -12685px;
+    top: 3307px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_220 {
+    color: rgba(255, 255, 255, 1);
+    width: 391px;
+    height: 32px;
+    position: absolute;
+    left: -12685px;
+    top: 3342px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_221 {
+    color: rgba(255, 255, 255, 1);
+    width: 310px;
+    height: 21px;
+    position: absolute;
+    left: -12685px;
+    top: 3385px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_222 {
+    color: rgba(255, 255, 255, 1);
+    width: 310px;
+    height: 21px;
+    position: absolute;
+    left: -12685px;
+    top: 3425px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_223 {
+    color: rgba(255, 255, 255, 1);
+    width: 1060px;
+    height: 21px;
+    position: absolute;
+    left: -12685px;
+    top: 3523px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_224 {
+    color: rgba(255, 255, 255, 1);
+    width: 1300px;
+    height: 53px;
+    position: absolute;
+    left: -12685px;
+    top: 3463px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_225 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 220px;
+    height: 56px;
+    position: absolute;
+    left: -12642px;
+    top: 2845px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.e205_226 {
+    color: rgba(0, 0, 0, 1);
+    width: 310px;
+    height: 21px;
+    position: absolute;
+    left: -12696px;
+    top: 2862px;
+    font-family: Asus Rog;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0;
+}
+
+.e205_227 {
+    width: 538px;
+    height: 367px;
+    position: absolute;
+    left: 451px;
+    top: 0px;
+    background-image: url(images/tintalogo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e205_479 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 144px;
+    height: 114px;
+    position: absolute;
+    left: 69px;
+    top: 549px;
+}
+
+.e205_480 {
+    color: rgba(255, 255, 255, 1);
+    width: 303px;
+    height: 75px;
+    position: absolute;
+    left: 249px;
+    top: 569px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_481 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 144px;
+    height: 114px;
+    position: absolute;
+    left: 69px;
+    top: 703px;
+}
+
+.e205_482 {
+    color: rgba(255, 255, 255, 1);
+    width: 303px;
+    height: 75px;
+    position: absolute;
+    left: 249px;
+    top: 723px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_483 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 144px;
+    height: 114px;
+    position: absolute;
+    left: 69px;
+    top: 857px;
+}
+
+.e205_484 {
+    color: rgba(255, 255, 255, 1);
+    width: 303px;
+    height: 75px;
+    position: absolute;
+    left: 249px;
+    top: 877px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_485 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 144px;
+    height: 114px;
+    position: absolute;
+    left: 695px;
+    top: 556px;
+}
+
+.e205_486 {
+    color: rgba(255, 255, 255, 1);
+    width: 303px;
+    height: 75px;
+    position: absolute;
+    left: 876px;
+    top: 576px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_487 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 144px;
+    height: 114px;
+    position: absolute;
+    left: 695px;
+    top: 703px;
+}
+
+.e205_488 {
+    color: rgba(255, 255, 255, 1);
+    width: 344px;
+    height: 75px;
+    position: absolute;
+    left: 875px;
+    top: 723px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_489 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 144px;
+    height: 114px;
+    position: absolute;
+    left: 695px;
+    top: 857px;
+}
+
+.e205_490 {
+    color: rgba(255, 255, 255, 1);
+    width: 303px;
+    height: 75px;
+    position: absolute;
+    left: 875px;
+    top: 877px;
+    font-family: Asus Rog;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e205_517 {
+    color: rgba(255, 255, 255, 1);
+    width: 370px;
+    height: 33px;
+    position: absolute;
+    left: 535px;
+    top: 297px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 60px;
+    letter-spacing: 0;
+}
+
+.e206_124 {
+    color: rgba(255, 255, 255, 1);
+    width: 186px;
+    height: 26px;
+    position: absolute;
+    left: 304px;
+    top: 429px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e206_125 {
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    opacity: 0.5;
+    width: 196.76734924316406px;
+    height: 27.804080963134766px;
+    position: absolute;
+    left: 69px;
+    top: 429px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.e206_188 {
+    color: rgba(255, 255, 255, 1);
+    width: 82px;
+    height: 26px;
+    position: absolute;
+    left: 1358px;
+    top: 98px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e206_189 {
+    color: rgba(255, 255, 255, 1);
+    width: 186px;
+    height: 26px;
+    position: absolute;
+    left: 34px;
+    top: 36px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e206_190 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 60px;
+    height: 58px;
+    position: absolute;
+    left: 1358px;
+    top: 27px;
+}

@@ -19,7 +19,7 @@ a, .btn-link {
 }
 
 .content {
-    padding-top: 1.1rem;
+    padding-top: 0rem;
 }
 
 .valid.modified:not([type=checkbox]) {
@@ -62,3 +62,89 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+    /*efecto ingreso*/
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-attachment: scroll;
+    /*background-repeat: no-repeat;*/
+    /*background-image: url(../images/base.png);*/
+    background: url(https://media4.giphy.com/media/BHNfhgU63qrks/giphy.gif) /*no-repeat*/;
+    background-size: cover;
+    background-repeat: repeat;
+    /*background-color: #FFCECB;
+       
+        padding-top:5rem;*/
+    flex-direction: column;
+    overflow: visible;
+}
+/*
+.login {
+    width: auto;
+    height: 900px;
+    /*border: 1px solid #CCC;
+    background: url(https://media4.giphy.com/media/BHNfhgU63qrks/giphy.gif) no-repeat;
+    background-size: cover;
+    /*
+           background: url(https://media4.giphy.com/media/BHNfhgU63qrks/giphy.gif) center center no-repeat;
+        margin: 30px auto;
+    border-radius: 0px;
+    
+}
+
+    .login .form {
+        width: 200px;
+        height: 100px;
+        /*padding: 15px 25px;
+        position: center;
+        /*position: absolute ;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50, -50);
+        align-content: center;
+    }
+
+        .login .form h2 {
+            color: #FFF;
+            text-align: center;
+            font-weight: normal;
+            font-size: 18px;
+            margin-top: 0px;
+            /*margin-top: 60px;este es el del   borde superior
+            margin-bottom: 80px;
+        }
+
+        .login .form input {
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            background: rgba(255,255,255,.5);
+            border: 1px solid rgba(255,255,255,.1);
+            padding: 0 15px;
+            color: #FFF;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+            .login .form input:focus {
+                border: 1px solid rgba(255,255,255,.8);
+                outline: none;
+            }
+
+::-webkit-input-placeholder {
+    color: #DDD;
+}
+
+.login .form input.submit {
+    background: rgba(255,255,255,.9);
+    color: #444;
+    font-size: 15px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+*/
+/*efecto ingreso*/
