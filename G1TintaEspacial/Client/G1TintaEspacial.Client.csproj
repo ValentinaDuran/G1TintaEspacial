@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\G1TintaEspacial.BD\G1TintaEspacial.BD.csproj" />
     <ProjectReference Include="..\Shared\G1TintaEspacial.Shared.csproj" />
   </ItemGroup>
 
