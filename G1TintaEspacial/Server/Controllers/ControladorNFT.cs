@@ -47,9 +47,9 @@ namespace G1TintaEspacial.Server.Controllers
             }
         }
         [HttpPut("{id:int}")]
-        public ActionResult Put(int id, [FromBody] NFT nFT)
+        public ActionResult Put(int id, [FromBody] NFT nft)
         {
-            if (id != nFT.Id)
+            if (id != nft.Id)
             {
                 return BadRequest("Datos incorrectos");
             }
@@ -60,13 +60,13 @@ namespace G1TintaEspacial.Server.Controllers
                 return NotFound("No existe el NFT a modificar");
             }
 
-            mati.Id = nFT.Id;
-            mati.NombreObra = nFT.NombreObra;
-            mati.Descripcion = nFT.Descripcion;
-            mati.Autor = nFT.Autor;
-            mati.Precio = nFT.Precio;
-            mati.Token = nFT.Token;
-            mati.Precio = nFT.Precio;
+            mati.Id = nft.Id;
+            mati.NombreObra = nft.NombreObra;
+            mati.Descripcion = nft.Descripcion;
+            mati.Autor = nft.Autor;
+            mati.Precio = nft.Precio;
+            mati.Token = nft.Token;
+            mati.Precio = nft.Precio;
             try
             {
                 //throw(new Exception("Cualquier Verdura"));
