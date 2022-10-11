@@ -18,44 +18,28 @@ namespace G1TintaEspacial.Server.Controllers
          public async Task<ActionResult<List<NFT>>> Get()
          {
                 return await contex.NFTs.ToListAsync();
-
          }
-    }
-    [ApiController]
-    [Route("api/NFT")]
-    public class NFTController : ControllerBase
-    {
-        private readonly dbcontex contex;
-
-        public NFTController(dbcontex contex)
-        {
-            this.contex = contex;
-        }
-        #region GET
-        [HttpGet]
-        public async Task<ActionResult<List<NFT>>> Get()
-        {
-            return await contex.NFTs.ToListAsync();
-        }
-        #endregion
-
         #region GET ID
         [HttpGet("id:int")]
         public async Task<ActionResult<NFT>> Get(int id)
         {
             var NFT = await contex.NFTs.Where(e => e.Id == id).FirstOrDefaultAsync();
-            if (NFT = null)
+            if (NFT == null)
             {
                 return NotFound($"No existe el NFT con dicha ID={id}");
             }
             return NFT;
         }
         #endregion
-
-
-
-
     }
+
+
+
+
+
+
+
+}
 
     #region GET STRING
     /*[HttpGet("codigo:string")]
@@ -95,4 +79,4 @@ namespace G1TintaEspacial.Server.Controllers
     //    }
     //}
 
-}
+
