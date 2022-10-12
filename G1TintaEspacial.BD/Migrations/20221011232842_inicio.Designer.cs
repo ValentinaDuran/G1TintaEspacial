@@ -11,14 +11,14 @@ using TINTAESPACIAL.DataBase;
 namespace G1TintaEspacial.BD.Migrations
 {
     [DbContext(typeof(dbcontex))]
-    [Migration("20221010193958_inicio")]
+    [Migration("20221011232842_inicio")]
     partial class inicio
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.9")
+                .HasAnnotation("ProductVersion", "6.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -73,12 +73,7 @@ namespace G1TintaEspacial.BD.Migrations
                     b.Property<int>("Token")
                         .HasColumnType("int");
 
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("NFTs");
                 });
@@ -108,7 +103,6 @@ namespace G1TintaEspacial.BD.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("MercadoPago")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NombreUsuario")
@@ -127,21 +121,12 @@ namespace G1TintaEspacial.BD.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("G1TintaEspacial.BD.Data.Entidades.NFT", b =>
-                {
-                    b.HasOne("TINTAESPACIAL.DataBase.data.Entidades.Usuario", null)
-                        .WithMany("NFTs")
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("TINTAESPACIAL.DataBase.data.Entidades.Usuario", b =>
                 {
                     b.HasOne("G1TintaEspacial.BD.Data.Entidades.MedioPago", "MedioPago")
                         .WithMany("Usuarios")
                         .HasForeignKey("MedioPagoId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("MedioPago");
@@ -150,11 +135,6 @@ namespace G1TintaEspacial.BD.Migrations
             modelBuilder.Entity("G1TintaEspacial.BD.Data.Entidades.MedioPago", b =>
                 {
                     b.Navigation("Usuarios");
-                });
-
-            modelBuilder.Entity("TINTAESPACIAL.DataBase.data.Entidades.Usuario", b =>
-                {
-                    b.Navigation("NFTs");
                 });
 #pragma warning restore 612, 618
         }

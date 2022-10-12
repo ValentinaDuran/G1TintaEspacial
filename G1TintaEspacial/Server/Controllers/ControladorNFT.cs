@@ -10,7 +10,7 @@ namespace G1TintaEspacial.Server.Controllers
     public class ControladorNFT : ControllerBase
     {
         private readonly dbcontex contex;
-        public ControladorNFT(dbcontex context)
+        public ControladorNFT(dbcontex contex)
         {
             this.contex = contex;
         }
@@ -32,11 +32,27 @@ namespace G1TintaEspacial.Server.Controllers
         }
         #endregion
 
+        /*[HttpPost]
+        public async Task<ActionResult<int>> Post(NFT nft)
+        {
+            try
+            {
+                contex.NFTs.Add(nft);
+                await contex.SaveChangesAsync();
+                return nft.Id;
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }*/
+
         [HttpPost]
         public async Task<ActionResult<int>> Post(NFT nft)
         {
             try
             {
+
                 contex.NFTs.Add(nft);
                 await contex.SaveChangesAsync();
                 return nft.Id;
@@ -67,6 +83,8 @@ namespace G1TintaEspacial.Server.Controllers
             mati.Precio = nft.Precio;
             mati.Token = nft.Token;
             mati.Precio = nft.Precio;
+            mati.ImagenNFT = nft.ImagenNFT;
+
             try
             {
                 //throw(new Exception("Cualquier Verdura"));

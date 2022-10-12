@@ -48,7 +48,7 @@ namespace TINTAESPACIAL.DataBase.data.Entidades
 
         #region Relaciones
         // Relacion con NFT 1 usuario tatuador tiene uno o muchos nfts
-        public List<NFT> NFTs { get; set; }
+        //public List<NFT> NFTs { get; set; }
 
         //Relacion con Medio de pago/ Mercado apago
         //public List<MedioPago> MediosPagos { get; set; }

@@ -16,7 +16,7 @@ namespace G1TintaEspacial.BD.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.9")
+                .HasAnnotation("ProductVersion", "6.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -38,62 +38,16 @@ namespace G1TintaEspacial.BD.Migrations
                     b.HasIndex(new[] { "Alias" }, "MedioPagoAlias_UQ")
                         .IsUnique();
 
-                    b.ToTable("MedioPagos", (string)null);
+                    b.ToTable("MedioPagos");
                 });
 
-            modelBuilder.Entity("TINTAESPACIAL.DataBase.data.Entidades.Usuario", b =>
+            modelBuilder.Entity("G1TintaEspacial.BD.Data.Entidades.NFT", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Contraseña")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("ImagePerfil")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("MedioPagoId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("MercadoPago")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NombreUsuario")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("Telefono")
-                        .HasMaxLength(20)
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MedioPagoId");
-
-                    b.ToTable("Usuarios", (string)null);
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Usuario");
-                });
-
-            modelBuilder.Entity("G1TintaEspacial.BD.Data.Entidades.NFT", b =>
-                {
-                    b.HasBaseType("TINTAESPACIAL.DataBase.data.Entidades.Usuario");
 
                     b.Property<string>("Autor")
                         .IsRequired()
@@ -117,15 +71,52 @@ namespace G1TintaEspacial.BD.Migrations
                     b.Property<int>("Token")
                         .HasColumnType("int");
 
-                    b.Property<int>("UsuarioId")
+                    b.HasKey("Id");
+
+                    b.ToTable("NFTs");
+                });
+
+            modelBuilder.Entity("TINTAESPACIAL.DataBase.data.Entidades.Usuario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.HasIndex("UsuarioId");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.HasIndex(new[] { "Id" }, "MedioPagoId_UQ")
-                        .IsUnique();
+                    b.Property<string>("Contraseña")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
-                    b.HasDiscriminator().HasValue("NFT");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("ImagePerfil")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MedioPagoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MercadoPago")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NombreUsuario")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<int>("Telefono")
+                        .HasMaxLength(20)
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedioPagoId");
+
+                    b.ToTable("Usuarios");
                 });
 
             modelBuilder.Entity("TINTAESPACIAL.DataBase.data.Entidades.Usuario", b =>
@@ -139,23 +130,9 @@ namespace G1TintaEspacial.BD.Migrations
                     b.Navigation("MedioPago");
                 });
 
-            modelBuilder.Entity("G1TintaEspacial.BD.Data.Entidades.NFT", b =>
-                {
-                    b.HasOne("TINTAESPACIAL.DataBase.data.Entidades.Usuario", null)
-                        .WithMany("NFTs")
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("G1TintaEspacial.BD.Data.Entidades.MedioPago", b =>
                 {
                     b.Navigation("Usuarios");
-                });
-
-            modelBuilder.Entity("TINTAESPACIAL.DataBase.data.Entidades.Usuario", b =>
-                {
-                    b.Navigation("NFTs");
                 });
 #pragma warning restore 612, 618
         }
