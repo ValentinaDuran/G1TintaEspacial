@@ -17,7 +17,7 @@ namespace G1TintaEspacial.BD.Data.Entidades
         public string Alias { get; set; }
 
 
-        public List<Usuario> Usuarios { get; set; }
+         public List<Usuario> Usuarios { get; set; }
 
 
     }
